@@ -1,0 +1,522 @@
+
+/* CSS for the website body */
+body {
+  background-color: #f2f2f2;
+  font-family: 'Lato', sans-serif; 
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* CSS for all h# tags */
+/* CSS for Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 300;
+  color: #333;
+}
+
+/* CSS for h5 (bold and underline) */
+h5 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* CSS for Paragraphs */
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* CSS for links */
+a {
+  color: #1CBCAD;
+  word-wrap: break-word;
+
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before,
+a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* CSS for horizontal line break */
+/* CSS for hr tag */
+ hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*---------------------------------------------------
+  SECTION WRAPS
+---------------------------------------------------*/
+
+/* Header section wrapper */
+.header {
+  background: #1CBCAD;
+  background: url(../images/header-bg.jpg) no-repeat center top;
+  padding-top:140px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 500px;
+  width: 100%;
+  
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* CSS for header <h1> tag */
+.header h1 {
+  font-size: 80px;
+  color: white;
+  background: rgba(0,0,0,0.2);
+}
+
+/* CSS for header <h3> tag */
+.header h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.header h3 a {
+  color: #fff;
+}
+
+/* About section wrapper */
+.about {
+  background: #2c3e50;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+} 
+
+/* CSS for about <h5> tag */
+.about h5, p {
+  color: white;
+}
+
+/* CSS for about i */
+.about i {
+  color: white;
+  font-size: 20px;
+  padding-right: 8px;
+  vertical-align: middle;
+}
+
+/* What I've Done section wrapper */
+.what {
+  background: #2c3e50;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+/* CSS for what I've done section <h5> and <p> tag */
+.what h5, p {
+  color: white;
+}
+
+/* What I Do section wrapper */
+.what2 {
+  background: #2c3e50;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+/* CSS for what I do <h5> and <p> tag */
+.what2 h5, p {
+  color: white;
+}
+
+/* Footer section wrapper */
+.footer {
+  background: #2f2f2f;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* CSS for footer <p> tag */
+.footer p {
+  color: white;
+}
+
+/* CSS for footer <h5> tag */
+.footer h5 {
+  color: white;
+}
+
+/* Footer review THIS */
+.footer t {
+  font-weight: 700;
+}
+
+/* Footer social icons */
+.footer i {
+  padding-right: 8px;
+  /*color: #1abc9c;*/
+}
+
+/*---------------------------------------------------
+  Global Values
+---------------------------------------------------*/
+
+/* CSS for description */
+.desc {
+  padding-top: 50px;
+}
+
+/* CSS for description p */
+.desc p {
+  color: #2f2f2f;
+}
+
+/* CSS for desc t */
+.desc t {
+  color: #34495e;
+  font-weight: 700;
+}
+
+/* CSS for desc imp */
+.desc imp {
+  padding: 6px;
+  color: white;
+  background: #34495e;
+}
+
+/* CSS for sm */
+.sm {
+  font-size: 12px;
+}
+
+/* CSS for description col-lg-3 bootstrap*/
+.desc .col-lg-3 {
+  text-transform: uppercase;
+}
+
+/* CSS for container, row paragrph.tight (bootstrap) */
+.container .row p.tight {
+  margin-bottom: 10px;
+}
+
+/*---------------------------------------------------
+  Animation FadeInUp effect
+---------------------------------------------------*/
+
+/* animation for when loading up the page */
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; 
+  }
+
+  100% {
+    opacity: 1; 
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  } 
+}
+
+/* Fadein animation for loading the page */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in up animation when loading the page */
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  }
+
+/* CSS adding a border around my name */
+.border:hover{
+  box-shadow: inset 0 0 0 10px #2F2FA2;
+}
+
+/*---------------------------------------------------
+  Listed Table With Cells
+---------------------------------------------------*/
+
+/* CSS for table and the cells */
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+/*---------------------------------------------------
+  Navigation Bar
+---------------------------------------------------*/
+
+/* CSS for the navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align:center;
+}
+
+/* CSS for the navigation bar a */
+.navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+/* CSS for navigation bar hover */
+.navbar a:hover{
+  background: #ddd;
+  color: black;
+}
+
+/*---------------------------------------------------
+  Button That Takes You To The Front Of The Page
+---------------------------------------------------*/
+
+/* CSS for the top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #05386B;
+  color: white;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+
+/* CSS for hovering effect on the top button */
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*---------------------------------------------------
+  Image of myself
+---------------------------------------------------*/
+
+/* CSS for the image of myself */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------------------------------------------------
+  Button that takes you to my GitHub
+---------------------------------------------------*/
+
+/* CSS for the GitHub button */
+.button {
+  border-radius: 4px;
+  transition: all 0.5s;
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* CSS for button*/
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* CSS for button after span */
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+/* CSS for button hover span */
+.button:hover span {
+  padding-right: 25px;
+}
+
+/* CSS for button after hover span */
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*---------------------------------------------------
+  Animation bounceIn effect
+---------------------------------------------------*/
+
+/* CSS animation for the bouncing in effect  */
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounceIn {
+  animation-duration: 2s;
+  animation-name: bounceIn;
+}
